@@ -21,26 +21,26 @@
 // ============================================
 
 // TODO: Define el nombre de tu dominio
-const DOMAIN_NAME = "Mi Dominio";
+const DOMAIN_NAME = "App de Mensajería Urbana";
 
 // TODO: Define el nombre de la entidad principal
 // Inclúyelo con espacios y mayúsculas/minúsculas
 // para poder aplicar transformaciones después
-const rawEntityName = "  nombre de la entidad  ";
+const rawEntityName = "  Envío Express Urbano  ";
 
 // TODO: Define una categoría o tipo (string)
-const entityCategory = "Categoría del elemento";
+const entityCategory = "Entrega de paquete";
 
 // TODO: Define un código identificador (string)
 // Elige un prefijo coherente con tu dominio
-const entityCode = "COD-001";
+const entityCode = "ENV-001";
 
 // TODO: Define una descripción corta (string)
 // Debe contener varias palabras para usar includes/slice
-const entityDescription = "Descripción interesante de la entidad del dominio asignado.";
+const entityDescription = "Servicio de entrega rápida para paquetes dentro de la ciudad usando mensajeros urbanos.";
 
 // TODO: Define un dato numérico relevante (number)
-const mainValue = 0;
+const mainValue = 15000; // precio del envío
 
 // TODO: Define un estado booleano
 const isActive = true;
@@ -74,7 +74,7 @@ const hasValidPrefix = entityCode.startsWith(codePrefix);
 
 // TODO: Verifica si la descripción contiene una palabra clave
 // Usa includes() con una palabra importante de tu dominio
-const descriptionIsRelevant = entityDescription.includes("dominio");
+const descriptionIsRelevant = entityDescription.includes("entrega");
 
 // TODO: Verifica si el código termina con los dígitos
 // Usa endsWith() con algo coherente de tu dominio
@@ -117,7 +117,7 @@ console.log(mainCard);
 console.log("--- Validaciones ---");
 // TODO: Muestra los resultados de las validaciones con template literals
 console.log(`¿Código empieza con '${codePrefix}'?: ${hasValidPrefix}`);
-console.log(`¿Descripción contiene 'dominio'?: ${descriptionIsRelevant}`);
+console.log(`¿Descripción contiene 'entrega'?: ${descriptionIsRelevant}`);
 console.log(`¿Código termina con '001'?: ${hasValidSuffix}`);
 console.log("");
 
@@ -130,6 +130,6 @@ console.log("--- Notificación ---");
 
 // TODO: Construye un mensaje corto de una línea
 // Usa template literal con el nombre limpio y el código
-const notification = `📢 Nuevo elemento disponible: ${entityName} (${entityCode})`;
+const notification = `📦 Nuevo envío registrado: ${entityName} (${entityCode})`;
 console.log(notification);
 console.log("");
