@@ -53,7 +53,7 @@ if (elementValue >= 75){
 // TODO: Usa el ternario para determinar un estado de dos opciones.
 // Ejemplo: const statusLabel = elementStatus === "active" ? "Activo" : "Inactivo";
 
-const statusLabel = elementStatus = "active" ? "Activo" : "Inactivo"; // TODO: implementar con ternario
+const statusLabel = elementStatus === "active" ? "Activo" : "Inactivo"; // TODO: implementar con ternario
 
 // ============================================
 // SECCIÓN 4: Tipo con switch
